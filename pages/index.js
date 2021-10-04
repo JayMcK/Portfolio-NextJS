@@ -9,7 +9,6 @@ import Dialog from "@material-ui/core/Dialog";
 import Divider from "@material-ui/core/Divider";
 
 import ProjectDialog from "../src/commonComponents/ProjectDialog";
-import APIProjectDialog from "../src/commonComponents/APIProjectDialog";
 import ContactCard from "../src/ui/ContactCard";
 
 import { getWebProjects } from "../src/data/projectData";
@@ -226,7 +225,7 @@ export default function Home({ setValue }) {
               {webProjects &&
                 webProjects.map((project) => (
                   <Grid
-                    key={project.image}
+                    key={`${project.image}${project.title}`}
                     item
                     sm
                     container
@@ -300,7 +299,7 @@ export default function Home({ setValue }) {
               {APIProjects &&
                 APIProjects.map((project) => (
                   <Grid
-                    key={project.image}
+                    key={`${project.image}${project.title}`}
                     item
                     sm
                     container
@@ -647,11 +646,11 @@ export default function Home({ setValue }) {
           onClose={() => setDialogOpen(false)}
           fullScreen
         >
-          {projectType === "web" ? (
-            <ProjectDialog info={project} setDialogOpen={setDialogOpen} />
-          ) : projectType === "api" ? (
-            <APIProjectDialog info={project} setDialogOpen={setDialogOpen} />
-          ) : null}
+          <ProjectDialog
+            info={project}
+            setDialogOpen={setDialogOpen}
+            projectType={projectType}
+          />
         </Dialog>
       </Grid>
     </Grid>

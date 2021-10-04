@@ -11,6 +11,7 @@ import Divider from "@material-ui/core/Divider";
 import CloseIcon from "@material-ui/icons/Close";
 
 import { getTechStackIconsFull } from "../data/projectData";
+import { getTechStackIconsPart } from "../data/projectData";
 
 const useStyles = makeStyles((theme) => ({
   icons: {
@@ -83,17 +84,19 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ProjectDialog({ info, setDialogOpen }) {
+export default function ProjectDialog({ info, setDialogOpen, projectType }) {
   const classes = useStyles();
   const theme = useTheme();
 
   const matchesSM = useMediaQuery(theme.breakpoints.down("sm"));
 
   const [techStackIcons, setTechStackIcons] = useState(null);
+  const [techStackIconsPart, setTechStackIconsPart] = useState(null);
 
   useEffect(() => {
     setTechStackIcons(getTechStackIconsFull());
-  });
+    setTechStackIconsPart(getTechStackIconsPart());
+  }, []);
 
   return (
     <DialogContent>
@@ -160,12 +163,27 @@ export default function ProjectDialog({ info, setDialogOpen }) {
           style={{ marginTop: "2em", marginBottom: "2em" }}
           justifyContent="center"
         >
-          {techStackIcons &&
-            techStackIcons.map((icon) => (
-              <Grid item key={icon.src}>
-                <img src={icon.src} alt={icon.alt} className={classes.icons} />
-              </Grid>
-            ))}
+          {techStackIcons && projectType === "web"
+            ? techStackIcons.map((icon) => (
+                <Grid item key={icon.src}>
+                  <img
+                    src={icon.src}
+                    alt={icon.alt}
+                    className={classes.icons}
+                  />
+                </Grid>
+              ))
+            : techStackIcons && projectType === "api"
+            ? techStackIconsPart.map((icon) => (
+                <Grid item key={icon.src}>
+                  <img
+                    src={icon.src}
+                    alt={icon.alt}
+                    className={classes.icons}
+                  />
+                </Grid>
+              ))
+            : null}
         </Grid>
         <Grid
           item

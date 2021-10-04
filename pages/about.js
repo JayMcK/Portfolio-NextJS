@@ -64,7 +64,7 @@ export default function About({ setValue }) {
 
   useEffect(() => {
     setTechStackIcons(getTechStackIconsFull());
-  });
+  }, []);
 
   return (
     <Grid

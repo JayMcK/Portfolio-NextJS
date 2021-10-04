@@ -103,7 +103,9 @@ export default function Projects({ setValue }) {
                 </Hidden>
               </Grid>
               <Grid item md container>
-                {webProjects && <LightProject info={webProjects[0]} />}
+                {webProjects && (
+                  <LightProject projectType="web" info={webProjects[0]} />
+                )}
               </Grid>
               <Hidden lgUp>
                 <Grid
@@ -133,7 +135,9 @@ export default function Projects({ setValue }) {
               style={{ paddingTop: "5em", paddingBottom: "5em" }}
             >
               <Grid item md container>
-                {webProjects && <PurpleProject info={webProjects[1]} />}
+                {webProjects && (
+                  <PurpleProject projectType="web" info={webProjects[1]} />
+                )}
               </Grid>
               <Grid
                 item
@@ -192,7 +196,9 @@ export default function Projects({ setValue }) {
                 </Hidden>
               </Grid>
               <Grid item md container>
-                {APIProjects && <OrangeProject info={APIProjects[0]} />}
+                {APIProjects && (
+                  <OrangeProject projectType="api" info={APIProjects[0]} />
+                )}
               </Grid>
               <Hidden lgUp>
                 <Grid
@@ -222,7 +228,9 @@ export default function Projects({ setValue }) {
               style={{ paddingTop: "5em", paddingBottom: "5em" }}
             >
               <Grid item md container>
-                {APIProjects && <LightProject info={APIProjects[1]} />}
+                {APIProjects && (
+                  <LightProject projectType="api" info={APIProjects[1]} />
+                )}
               </Grid>
               <Grid
                 item

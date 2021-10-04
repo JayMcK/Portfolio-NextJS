@@ -7,6 +7,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Divider from "@material-ui/core/Divider";
 
 import { getTechStackIconsFull } from "../data/projectData";
+import { getTechStackIconsPart } from "../data/projectData";
 
 const useStyles = makeStyles((theme) => ({
   icons: {
@@ -61,17 +62,19 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ProjectDialog({ info }) {
+export default function ProjectDialog({ info, projectType }) {
   const classes = useStyles();
   const theme = useTheme();
 
   const matchesSM = useMediaQuery(theme.breakpoints.down("sm"));
 
   const [techStackIcons, setTechStackIcons] = useState(null);
+  const [techStackIconsPart, setTechStackIconsPart] = useState(null);
 
   useEffect(() => {
     setTechStackIcons(getTechStackIconsFull());
-  });
+    setTechStackIconsPart(getTechStackIconsPart());
+  }, []);
 
   return (
     <Grid container direction="row">
@@ -134,16 +137,27 @@ export default function ProjectDialog({ info }) {
             style={{ marginTop: "2em", marginBottom: "0.5em" }}
             justifyContent="center"
           >
-            {techStackIcons &&
-              techStackIcons.map((icon) => (
-                <Grid item key={icon.src}>
-                  <img
-                    src={icon.src}
-                    alt={icon.alt}
-                    className={classes.icons}
-                  />
-                </Grid>
-              ))}
+            {techStackIcons && projectType === "web"
+              ? techStackIcons.map((icon) => (
+                  <Grid item key={icon.src}>
+                    <img
+                      src={icon.src}
+                      alt={icon.alt}
+                      className={classes.icons}
+                    />
+                  </Grid>
+                ))
+              : techStackIcons && projectType === "api"
+              ? techStackIconsPart.map((icon) => (
+                  <Grid item key={icon.src}>
+                    <img
+                      src={icon.src}
+                      alt={icon.alt}
+                      className={classes.icons}
+                    />
+                  </Grid>
+                ))
+              : null}
           </Grid>
           <Grid
             container

@@ -67,6 +67,7 @@ const techStackIcons = [
   },
   { name: "html", src: "/assets/htmlIcon.svg", alt: "html5 icon" },
   { name: "css", src: "/assets/cssIcon.svg", alt: "css3 icon" },
+  { name: "api", src: "/assets/apiIcon.svg", alt: "api icon" },
 ];
 
 export function getWebProjects() {
@@ -76,9 +77,12 @@ export function getWebProjects() {
 export function getAPIProjects() {
   return APIProjects;
 }
+export function getTechStackIconsAll() {
+  return techStackIcons;
+}
 
 export function getTechStackIconsFull() {
-  return techStackIcons;
+  return techStackIcons.filter((tech) => tech.name !== "api");
 }
 export function getTechStackIconsPart() {
   return techStackIcons.filter((tech) => tech.name !== "next");
