@@ -1,25 +1,34 @@
-# Next.js example
+# My Portfolio - Jay McKenzie
 
-## How to use
+Please visit the live site here: www.jaymckenzie.co.uk
 
-Download the example [or clone the repo](https://github.com/mui-org/material-ui):
+## Introduction
 
-```sh
-curl https://codeload.github.com/mui-org/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/nextjs
-cd nextjs
-```
+My Porfolio is a Single Page Web Application designed using Figma. Initially developed using create-react-app then migrated to Next.js for SEO Optimization and Server Side Rendering. JavaScript, React & Material UI were used to build this Front-End. This Web Application is linked to a Node.js back-end email service, hosted on Heroku, built by me.
 
-Install it and run:
+## Technologies
+
+- JavaScript
+- React
+- create-react-app
+- Next.js
+- Material UI
+- HTML
+- CSS
+
+## Setup
+
+To run this project, please either:
+
+Clone the repo: https://github.com/JayMcK/Portfolio-NextJS.git
+
+or
+
+Download the ZIP file
+
+At the Command Line cd into the project then run:
 
 ```sh
 npm install
 npm run dev
 ```
-
-or:
-
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui-org/material-ui/tree/master/examples/nextjs)
-
-## The idea behind the example
-
-[Next.js](https://github.com/zeit/next.js) is a framework for server-rendered React apps.
