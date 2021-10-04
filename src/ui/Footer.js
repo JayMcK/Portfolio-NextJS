@@ -68,7 +68,7 @@ export default function Footer({ value, setValue }) {
     { name: "Home", link: "/", activeIndex: 0 },
     { name: "About", link: "/about", activeIndex: 1 },
     { name: "Contact", link: "/contact", activeIndex: 2 },
-    { name: "Projects", link: "/projects", activeIndex: 3 },
+    { name: "Projects", link: "/projects", activeIndex: false },
   ];
 
   const socialMediaIcons = [

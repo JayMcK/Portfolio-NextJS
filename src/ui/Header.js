@@ -1,6 +1,5 @@
 import React, { useState, Fragment, useEffect } from "react";
-import Router from "next/router";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Link from "../Link";
 import Hidden from "@material-ui/core/Hidden";
 import Button from "@material-ui/core/Button";

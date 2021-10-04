@@ -117,7 +117,9 @@ export default function Contact() {
         setName(event.target.value);
         valid = /(.*[a-z]){2}/i.test(event.target.value);
         if (!valid) {
-          setNameHelper("Invalid Name");
+          setNameHelper(
+            "Invalid Name. Please enter a name with min. 2 characters"
+          );
         } else {
           setNameHelper("");
         }
@@ -137,7 +139,9 @@ export default function Contact() {
         setPhone(event.target.value);
         valid = /^\d{11}$/.test(event.target.value);
         if (!valid) {
-          setPhoneHelper("Invalid Phone Number");
+          setPhoneHelper(
+            "Invalid Phone Number. Please enter a UK number with 11 digits and no spaces."
+          );
         } else {
           setPhoneHelper("");
         }
@@ -238,7 +242,7 @@ export default function Contact() {
             alignItems={matchesMD ? "center" : undefined}
           >
             <Grid item style={{ marginLeft: matchesMD ? 0 : "2em" }}>
-              <Grid item>
+              <Grid item align={matchesMD ? "center" : undefined}>
                 <Typography paragraph>
                   <IconButton
                     disableRipple
@@ -257,7 +261,11 @@ export default function Contact() {
                   </a>
                 </Typography>
               </Grid>
-              <Grid item style={{ marginBottom: "1em" }}>
+              <Grid
+                item
+                style={{ marginBottom: "1em" }}
+                align={matchesMD ? "center" : undefined}
+              >
                 <Typography>
                   <IconButton
                     disableRipple

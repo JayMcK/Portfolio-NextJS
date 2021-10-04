@@ -118,8 +118,8 @@ const useStyles = makeStyles((theme) => ({
       width: "17em",
     },
     backgroundColor: theme.palette.common.purple,
-    marginTop: "2.5em",
-    marginBottom: "2.5em",
+    marginTop: "5em",
+    marginBottom: "5em",
   },
 }));
 
@@ -164,7 +164,11 @@ export default function Home({ setValue }) {
                 Front End Web Developer
               </Typography>
             </Grid>
-            <Grid item align="center">
+            <Grid
+              item
+              align="center"
+              style={{ marginRight: "1em", marginLeft: "1em" }}
+            >
               <Typography
                 variant="subtitle1"
                 style={{ color: theme.palette.common.purple }}
@@ -386,7 +390,7 @@ export default function Home({ setValue }) {
                     variant="body1"
                     style={{ color: "#fff" }}
                   >
-                    I am familiar with Redux, Node.js, Express.js and
+                    I am familiar with Node.js, Express.js and
                     <span className={classes.specialText}>
                       {" "}
                       can quickly learn any tech that is right for the task at

@@ -237,9 +237,9 @@ export default function About({ setValue }) {
               }}
             >
               <Typography paragraph variant="body1">
-                With technology advancing constantly, and at an exponential
-                rate, not only are the existing technologies developing, but new
-                technologies are being created.
+                With technology advancing at an exponential rate, not only are
+                the existing technologies developing, but new technologies are
+                being created.
               </Typography>
               <Typography paragraph variant="body1">
                 Therefore, instead of becoming dependent on and focused on any
