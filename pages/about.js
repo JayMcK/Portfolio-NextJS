@@ -120,7 +120,7 @@ export default function About({ setValue }) {
               color="primary"
               className={classes.downloadButton}
               component={"a"}
-              href="https://www.mediafire.com/file/7tyl0oz0qo9l8m1/JayMcKenzieCV_compressed.pdf/file"
+              href="https://www.mediafire.com/file/z6r6z7pl6oakpha/JayMcKenzieCV_compressed.pdf/file"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -181,10 +181,11 @@ export default function About({ setValue }) {
                 The more projects I create, the more I understand the need for a
                 strong grasp on Data Structures and Algorithms - in order to
                 develop technology that is scalable and is efficient - both in
-                Time and Space (Big O), alongside giving me the knowledge on how
-                to best structure and store data in order to match the desired
-                functionality of the program. This has lead to me giving a lot
-                of focus to this aspect of Computer Science and Programming.
+                Time and Space (Big O Notation), alongside giving me the
+                knowledge on how to best structure and store data in order to
+                match the desired functionality of the program. This has lead to
+                me giving a lot of focus to this aspect of Computer Science and
+                Programming.
               </Typography>
             </Grid>
           </Grid>
