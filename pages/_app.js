@@ -26,7 +26,7 @@ export default function MyApp(props) {
   return (
     <React.Fragment>
       <Head>
-        <title>Jay McKenzie | Portfolio | Front End Web Developer</title>
+        <title>Web Developer - Portfolio | Jay McKenzie</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"

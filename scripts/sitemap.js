@@ -4,7 +4,7 @@ const formatDate = require("./formatDate");
 
 // ROBOTS.txt
 const robotsTxt = `User-agent: *
-Sitemap: https://flowliving.vercel.app/sitemap_local.xml
+Sitemap: https://jaymckenzie.co.uk/sitemap_local.xml
 Disallow:`;
 
 fs.writeFileSync("public/robots.txt", robotsTxt);
@@ -22,8 +22,8 @@ const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
       (path) => `<url>
     ${
       path === "/index"
-        ? `<loc>https://flowliving.vercel.app</loc>`
-        : `<loc>https://flowliving.vercel.app${path}</loc>`
+        ? `<loc>https://jaymckenzie.co.uk</loc>`
+        : `<loc>https://jaymckenzie.co.uk${path}</loc>`
     }
     <lastmod>${
       pathsObj[path].lastModified

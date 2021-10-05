@@ -36,7 +36,7 @@ const APIProjects = [
     designLink:
       "https://www.mediafire.com/file/sv7gpo1qheoxa0t/indigo-design.pdf/file",
     details:
-      "Indigo is a Single Page Web Application, designed using Figma. Indigo is a movie information website, developed using OMDb's API; allowing the user to browse movie titles. Material UI was used throughout this project.",
+      "Indigo is a Single Page Web Application, designed using Figma. Indigo is a movie information website, developed using OMDb's REST API; allowing the user to browse movie titles. Material UI was used throughout this project.",
   },
   {
     title: "Crib Cocktails",
@@ -48,7 +48,7 @@ const APIProjects = [
     designLink:
       "https://www.mediafire.com/file/xi3zlkkjz2j4pvu/crib-cocktails-design.pdf/file",
     details:
-      "Crib Cocktails is a Single Page Web Application, designed using Figma. Indigo is a cocktail recipe information website, developed using thecocktaildb's API; allowing the user to search for cocktail recipe's by first letter, name or random pick. Material UI was used throughout this project.",
+      "Crib Cocktails is a Single Page Web Application, designed using Figma. Indigo is a cocktail recipe information website, developed using thecocktaildb's REST API; allowing the user to search for cocktail recipe's by first letter, name or random pick. Material UI was used throughout this project.",
   },
 ];
 

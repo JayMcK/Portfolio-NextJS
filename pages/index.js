@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Head from "next/head";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Link from "../src/Link";
 import Grid from "@material-ui/core/Grid";
@@ -145,6 +146,27 @@ export default function Home({ setValue }) {
 
   return (
     <Grid item>
+      <Head>
+        <title key="title">
+          Front End Web Developer - Portfolio | Jay McKenzie
+        </title>
+        <meta
+          name="description"
+          key="description"
+          content="I am a Front End Web Developer from London, UK. Currently specialising in JavaScript, React, Material UI, NextJS, CSS and HTML. Feel free to browse my recent projects and contact me to discuss any opportunities."
+        />
+        <meta
+          property="og:title"
+          key="og:title"
+          content="Front End Web Developer Portfolio | Jay McKenzie"
+        />
+        <meta property="og:url" key="og:url" content="jaymckenzie.co.uk/" />
+        <link
+          rel="canonical"
+          key="canonical"
+          href="https://jaymckenzie.co.uk/"
+        />
+      </Head>
       <Grid container direction="column">
         <Grid item>
           {/* ------ Hero Section ----- */}

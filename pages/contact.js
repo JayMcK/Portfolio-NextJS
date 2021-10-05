@@ -1,4 +1,5 @@
 import React, { useState, Fragment } from "react";
+import Head from "next/head";
 import axios from "axios";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
@@ -213,6 +214,29 @@ export default function Contact() {
 
   return (
     <Grid item>
+      <Head>
+        <title key="title">Contact Me | Jay McKenzie</title>
+        <meta
+          name="description"
+          key="description"
+          content="I am a Front End Web Developer from London, UK. Currently specialising in JavaScript, React, Material UI, NextJS, CSS and HTML. Send me a message or give me a call if you'd like to discuss opportunities."
+        />
+        <meta
+          property="og:title"
+          key="og:title"
+          content="Front End Web Developer Portfolio | Contact Me"
+        />
+        <meta
+          property="og:url"
+          key="og:url"
+          content="jaymckenzie.co.uk/contact"
+        />
+        <link
+          rel="canonical"
+          key="canonical"
+          href="https://jaymckenzie.co.uk/contact"
+        />
+      </Head>
       <Grid container direction="row">
         <Grid
           container

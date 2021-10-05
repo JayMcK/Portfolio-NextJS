@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Head from "next/head";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -74,6 +75,31 @@ export default function About({ setValue }) {
       }}
     >
       <Grid container direction="column">
+        <Head>
+          <title key="title">
+            About Me - Background & Tech Stack | Jay McKenzie
+          </title>
+          <meta
+            name="description"
+            key="description"
+            content="Currently specialising in JavaScript, React, Material UI, NextJS, CSS and HTML. Check out my background and tech stack, and contact me to discuss opportunities."
+          />
+          <meta
+            property="og:title"
+            key="og:title"
+            content="Front End Web Developer Portfolio | About Me"
+          />
+          <meta
+            property="og:url"
+            key="og:url"
+            content="jaymckenzie.co.uk/about"
+          />
+          <link
+            rel="canonical"
+            key="canonical"
+            href="https://jaymckenzie.co.uk/about"
+          />
+        </Head>
         <Grid
           item
           style={{ marginLeft: matchesMD ? 0 : "5em", marginBottom: "5em" }}

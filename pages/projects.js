@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Head from "next/head";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -56,6 +57,31 @@ export default function Projects({ setValue }) {
 
   return (
     <Grid item>
+      <Head>
+        <title key="title">
+          Recent Projects - Web Apps & Fun with APIs | Jay McKenzie
+        </title>
+        <meta
+          name="description"
+          key="description"
+          content="My recent projects use a combination of Figma, JavaScript, React, Material UI, NextJS, CSS and HTML for the design and development, alongside RESTful APIs. Web Applications & Fun with APIs."
+        />
+        <meta
+          property="og:title"
+          key="og:title"
+          content="Front End Web Developer Portfolio | Recent Projects"
+        />
+        <meta
+          property="og:url"
+          key="og:url"
+          content="jaymckenzie.co.uk/projects"
+        />
+        <link
+          rel="canonical"
+          key="canonical"
+          href="https://jaymckenzie.co.uk/projects"
+        />
+      </Head>
       <Grid container direction="column" style={{ marginTop: "3em" }}>
         <Grid
           item
