@@ -120,7 +120,7 @@ export default function About({ setValue }) {
               color="primary"
               className={classes.downloadButton}
               component={"a"}
-              href="https://www.mediafire.com/file/z6r6z7pl6oakpha/JayMcKenzieCV_compressed.pdf/file"
+              href="https://www.mediafire.com/file/dt3mwg0j51fyswk/Jay+McKenzie+CV-converted-compressed+(1).pdf/file"
               target="_blank"
               rel="noopener noreferrer"
             >
