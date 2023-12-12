@@ -87,7 +87,7 @@ export default function About({ setValue }) {
           <meta
             property="og:title"
             key="og:title"
-            content="Full Stack Software Engineer Portfolio | About Me"
+            content="Front End Web Developer Portfolio | About Me"
           />
           <meta
             property="og:url"
@@ -111,7 +111,7 @@ export default function About({ setValue }) {
           </Grid>
           <Grid item align="center">
             <Typography variant="h5" className={classes.aboutMeText} paragraph>
-              I am a Full Stack Software Engineer from London, UK.
+              I am a Front End Web Developer from London, UK.
             </Typography>
           </Grid>
           <Grid item align="center">

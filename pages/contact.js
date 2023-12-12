@@ -219,12 +219,12 @@ export default function Contact() {
         <meta
           name="description"
           key="description"
-          content="I am a Full Stack Software Engineer from London, UK. Currently specialising in JavaScript, React, Material UI, NextJS, CSS and HTML. Send me a message or give me a call if you'd like to discuss opportunities."
+          content="I am a Front End Web Developer from London, UK. Currently specialising in JavaScript, React, Material UI, NextJS, CSS and HTML. Send me a message or give me a call if you'd like to discuss opportunities."
         />
         <meta
           property="og:title"
           key="og:title"
-          content="Full Stack Software Engineer Portfolio | Contact Me"
+          content="Front End Web Developer Portfolio | Contact Me"
         />
         <meta
           property="og:url"

@@ -148,17 +148,17 @@ export default function Home({ setValue }) {
     <Grid item>
       <Head>
         <title key="title">
-          Full Stack Software Engineer - Portfolio | Jay McKenzie
+          Front End Web Developer - Portfolio | Jay McKenzie
         </title>
         <meta
           name="description"
           key="description"
-          content="I am a Full Stack Software Engineer from London, UK. Currently specialising in JavaScript, React, Material UI, NextJS, CSS and HTML. Feel free to browse my recent projects and contact me to discuss any opportunities."
+          content="I am a Front End Web Developer from London, UK. Currently specialising in JavaScript, React, Material UI, NextJS, CSS and HTML. Feel free to browse my recent projects and contact me to discuss any opportunities."
         />
         <meta
           property="og:title"
           key="og:title"
-          content="Full Stack Software Engineer Portfolio | Jay McKenzie"
+          content="Front End Web Developer Portfolio | Jay McKenzie"
         />
         <meta property="og:url" key="og:url" content="jaymckenzie.co.uk/" />
         <link
@@ -183,7 +183,7 @@ export default function Home({ setValue }) {
               style={{ marginRight: "1em", marginLeft: "1em" }}
             >
               <Typography paragraph variant="h1">
-                Full Stack Software Engineer
+                Front End Web Developer
               </Typography>
             </Grid>
             <Grid
