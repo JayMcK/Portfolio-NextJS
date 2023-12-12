@@ -69,7 +69,7 @@ export default function Projects({ setValue }) {
         <meta
           property="og:title"
           key="og:title"
-          content="Front End Web Developer Portfolio | Recent Projects"
+          content="Full Stack Software Engineer Portfolio | Recent Projects"
         />
         <meta
           property="og:url"
